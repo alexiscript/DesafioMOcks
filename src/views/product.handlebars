@@ -16,7 +16,7 @@
             <p>Categoria: {{product.category}}</p>
             <p>ID: <span id="prodId">{{product._id}}</span></p>
             <button id="addToCart">Agregar al carrito</button>
-            <img height="300px" src="https://media.tenor.com/WpgSYAYBpLkAAAAC/hacker.gif" alt="product image"/>
+            <img height="300px" src={{product.thumbnail}} alt="product image" />
         </div>
 {{else}}
     <h2>El producto con el ID {{product.id}} no existe</h2>

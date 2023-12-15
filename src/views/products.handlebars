@@ -42,7 +42,7 @@
 <div class="product-container">
     {{#each products}}
     <div class="product">
-        <img height="300px" src="https://media.tenor.com/WpgSYAYBpLkAAAAC/hacker.gif" alt="product image" />
+        <img height="300px" src={{this.thumbnail}} alt="product image" />
         <h3>{{this.title}}</h3>
         <p>${{this.price}}</p>
         <p><a href="http://localhost:3000/products?category={{this.category}}">{{this.category}}</a></p>
